@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bún Chả Hà Nội Chính Gốc - Đến Với Sài Gòn</title>
+  <meta name="description" content="Hương vị Thủ đô giữa nhịp sống sôi động Nam Bộ. Bún chả nướng than hoa chính gốc tại Sài Gòn.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Phosphor Icons for simple UI icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">
+        <i class="ph ph-fire"></i>
+        <span>BÚN CHẢ <span class="highlight">HN -> SG</span></span>
+      </div>
+      <nav class="nav-links">
+        <a href="#home">Trang Phủ</a>
+        <a href="#menu">Thực Đơn</a>
+        <a href="#booking" class="btn btn-primary">Đặt Bàn Ngay</a>
+      </nav>
+      <div class="mobile-menu-btn">
+        <i class="ph ph-list"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="badge">🔥 Chính Gốc 100%</span>
+        <h1>Bún Chả Hà Nội Chính Gốc <br><span class="highlight">Đến Với Sài Gòn</span></h1>
+        <p class="slogan">Hương vị Thủ đô giữa nhịp sống sôi động Nam Bộ. Khói than hoa quyện cùng nước mắm chua ngọt chuẩn vị.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn btn-primary btn-large">Xem Thực Đơn <i class="ph ph-arrow-right"></i></a>
+          <a href="#booking" class="btn btn-outline btn-large">Đặt Bàn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="subtitle">Thực Đơn Của Quán</span>
+        <h2>Tinh Hoa Vị Bắc <span class="highlight">Giữa Lòng Nam</span></h2>
+        <p>Bát nước mắm ấm nóng, chả nướng than hoa xèo xèo cùng rau xà lách tươi xanh.</p>
+      </div>
+      
+      <div class="menu-grid" id="menu-container">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="booking-section">
+    <div class="container booking-container">
+      <div class="booking-info">
+        <h2>Đặt Bàn / Đặt Giao Hàng</h2>
+        <p>Để lại thông tin, chúng tôi sẽ chuẩn bị cho bạn những suất bún chả nóng hổi nhất!</p>
+        <ul class="features-list">
+          <li><i class="ph-fill ph-check-circle"></i> Nướng than hoa liên tục, luôn nóng hổi</li>
+          <li><i class="ph-fill ph-check-circle"></i> Khẩu phần đầy đặn, rau sạch an toàn</li>
+          <li><i class="ph-fill ph-check-circle"></i> Giao hàng không làm giảm độ ngon</li>
+        </ul>
+      </div>
+      <div class="booking-form-wrapper">
+        <form class="booking-form" id="bookingForm">
+          <div class="form-group">
+            <label for="name">Họ và Tên</label>
+            <input type="text" id="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại</label>
+            <input type="tel" id="phone" placeholder="090..." required>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="time">Giờ đến / Giao</label>
+              <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+              <label for="dish">Món chính</label>
+              <select id="dish" required>
+                <option value="">-- Chọn món --</option>
+                <option value="Bún chả truyền thống">Bún chả truyền thống</option>
+                <option value="Bún chả đặc biệt">Bún chả đặc biệt</option>
+                <option value="Bún chả giò">Bún chả giò</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="notes">Ghi chú thêm</label>
+            <textarea id="notes" rows="3" placeholder="Ví dụ: Thêm thịt, bỏ ớt..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Xác Nhận Đặt <i class="ph ph-check"></i></button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>BÚN CHẢ <span class="highlight">HN -> SG</span></h3>
+        <p>Mang cái hồn của chả nướng than hoa Hà Thành và nét sôi động vội vã của Sài Gòn vào chung một bát bún chả thượng hạng.</p>
+        <div class="social-links">
+          <a href="#"><i class="ph-fill ph-facebook-logo"></i></a>
+          <a href="#"><i class="ph-fill ph-instagram-logo"></i></a>
+          <a href="#"><i class="ph-fill ph-tiktok-logo"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Liên Hệ</h4>
+        <ul class="contact-info">
+          <li><i class="ph-fill ph-map-pin"></i> 145 Nguyễn Thị Minh Khai, Quận 1, TP.HCM</li>
+          <li><i class="ph-fill ph-phone"></i> 0901 234 567</li>
+          <li><i class="ph-fill ph-envelope-simple"></i> hello@bunchahnsg.com</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Giờ Mở Cửa</h4>
+        <ul class="hours-info">
+          <li><span>Thứ 2 - Thứ 6:</span> 08:00 - 22:00</li>
+          <li><span>Thứ 7 - CN:</span> 07:00 - 23:00</li>
+          <li>Nghỉ trưa: 14:00 - 16:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Bún Chả HN->SG. All rights reserved.</p>
+      <p class="credit">Thiết kế bởi Minh Đỗ</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
